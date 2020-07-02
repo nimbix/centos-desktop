@@ -50,6 +50,34 @@
           "required": true
         }
       }
+    },
+    "mvaluetest": {
+      "path": "/usr/local/scripts/mval-test.sh",
+      "interactive": true,
+      "name": "mvaluetest",
+      "description": "pass mvalues to a script",
+      "parameters": {
+        "-subscript": {
+          "positional": false,
+          "values": [
+            "harness with foo arg",
+            "harness with bar arg"
+          ],
+          "mvalues": [
+            "/usr/local/scripts/harness.sh foo",
+            "/usr/local/scripts/harness.sh bar"
+          ],
+          "required": true,
+          "type": "selection",
+          "name": "subscript call"
+        },
+        "-options": {
+          "positional": false,
+          "name": "Options",
+          "required": true,
+          "type": "STR"
+        }
+      }
     }
   },
   "image": {
