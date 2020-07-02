@@ -26,4 +26,4 @@ echo "subscript passed: |$SUBSCRIPT|"
 echo "options passed: |$OPTIONS|"
 
 sudo chmod a+x /usr/local/scripts/harness.sh
-exec "$SUBSCRIPT" "$OPTIONS"
+exec $SUBSCRIPT "$OPTIONS"
