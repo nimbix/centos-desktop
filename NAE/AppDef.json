@@ -53,7 +53,7 @@
     },
     "mvaluetest": {
       "path": "/usr/local/scripts/mval-test.sh",
-      "interactive": true,
+      "interactive": false,
       "name": "mvaluetest",
       "description": "pass mvalues to a script",
       "parameters": {
