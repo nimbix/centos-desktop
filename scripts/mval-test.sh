@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+#set -x
 
 [[ -r /etc/JARVICE/jobenv.sh ]] && . /etc/JARVICE/jobenv.sh
 
