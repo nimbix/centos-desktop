@@ -15,6 +15,10 @@ RUN curl -H 'Cache-Control: no-cache' \
         https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop
 
+# scripts
+WORKDIR /usr/local/scripts
+COPY scripts .
+
 COPY NAE/screenshot.png /etc/NAE/screenshot.png
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice/validate
