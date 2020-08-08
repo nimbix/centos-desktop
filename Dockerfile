@@ -5,10 +5,10 @@ WORKDIR /tmp
 
 # Update SERIAL_NUMBER to force rebuild of all layers (don't use cached layers)
 ARG SERIAL_NUMBER
-ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20200614.1100}
+ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20200808.1100}
 
 ARG GIT_BRANCH
-ENV GIT_BRANCH ${GIT_BRANCH:-master}
+ENV GIT_BRANCH ${GIT_BRANCH:-vnc-options-test}
 
 # Install image-common for X, VNC and common utilities
 RUN curl -H 'Cache-Control: no-cache' \
