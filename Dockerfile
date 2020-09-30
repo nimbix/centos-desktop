@@ -8,7 +8,8 @@ ARG SERIAL_NUMBER
 ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20200808.1100}
 
 ARG GIT_BRANCH
-ENV GIT_BRANCH ${GIT_BRANCH:-vnc-options-test}
+#ENV GIT_BRANCH ${GIT_BRANCH:-vnc-options-test}
+ENV GIT_BRANCH ${GIT_BRANCH:-master}
 
 # Install image-common for X, VNC and common utilities
 RUN curl -H 'Cache-Control: no-cache' \
