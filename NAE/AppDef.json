@@ -16,6 +16,7 @@
     "Firefox": {
       "path": "/usr/local/bin/nimbix_desktop",
       "interactive": true,
+      "publicip": true,
       "name": "Firefox",
       "description": "Run Firefox on the desktop",
       "parameters": {
@@ -32,6 +33,7 @@
     "Server": {
       "path": "/sbin/init",
       "interactive": true,
+      "publicip": true,
       "name": "Server",
       "description": "Launch a session with all boot services, including SSH (if installed)",
       "parameters": {}
@@ -39,6 +41,7 @@
     "GUI": {
       "path": "/usr/local/bin/nimbix_desktop",
       "interactive": true,
+      "publicip": true,
       "name": "GUI",
       "description": "Run a GUI command, and connect interactively directly from your web browser",
       "parameters": {
