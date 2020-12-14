@@ -5,10 +5,10 @@ WORKDIR /tmp
 
 # Update SERIAL_NUMBER to force rebuild of all layers (don't use cached layers)
 ARG SERIAL_NUMBER
-ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20201123.1000}
+ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20201214.1000}
 
 ARG GIT_BRANCH
-ENV GIT_BRANCH ${GIT_BRANCH:-dualvnc}
+ENV GIT_BRANCH ${GIT_BRANCH:-vnc-install-fix}
 
 # Install image-common for X, VNC and common utilities
 RUN curl -H 'Cache-Control: no-cache' \
