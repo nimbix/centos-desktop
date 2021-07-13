@@ -1,6 +1,6 @@
 {
-  "name": "CentOS desktop",
-  "description": "CentOS Linux desktop application",
+  "name": "Rocky desktop",
+  "description": "Rocky Linux 8 desktop application",
   "author": "Nimbix, Inc.",
   "licensed": true,
   "classifications": [

@@ -1,4 +1,4 @@
-FROM centos:7
+FROM rockylinux/rockylinux:8
 LABEL maintainer="Nimbix, Inc."
 
 WORKDIR /tmp
